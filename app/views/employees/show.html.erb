@@ -1,0 +1,11 @@
+<h1>Show page</h1>
+
+<p>Name: <%= @employee.full_name %> </p> 
+<p> Alias: <%= @employee.alias %> </p>
+<p> Title: <%= @employee.title %> </p>
+<p> Office: <%= @employee.office %> </p>
+<p> Doggie: <%= link_to @employee.dog.name, dog_path(@employee.dog.id) %> </p>
+
+<h2>Profile Picture </h2>
+
+<p><img src="<%= @employee.img_url %>" alt="<%= @employee.full_name %>"></p>

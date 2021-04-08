@@ -1,0 +1,14 @@
+<h1>Show page</h1>
+
+<p>Name: <%= @dog.name %> </p> 
+<p>Age: <%= @dog.age %></p>
+<p>Breed: <%= @dog.breed %></p>
+
+<h2>Employees</h2>
+
+<% @dog.employees.each do |employee| %>
+  
+    <p> <%= employee.full_name %>
+
+<% end %>
+
